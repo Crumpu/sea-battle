@@ -8,23 +8,79 @@
   height: 600px;
   width: 600px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr); */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-areas: 
+  'a a . b . . c c c c'  
+  '. . . b . . . . . .'  
+  'z . . b . g g g . q' 
+  'z . . . . . . . . q'  
+  'z . . . . . . . . .'  
+  'z . . . . f . . . w'  
+  '. . . . . f . . . w'  
+  'e e . . . . . . . w'  
+  '. . . . . . . . . .'  
+  '. . . . d d d d d d' ;
 }
 
-.grid > div:nth-child(-n+4) {
+/* .grid > div:nth-child(-n+4) {
   background-color: #800080;
+  grid-area: a;
 }
 
 .grid > div:nth-child(n+5):nth-child(-n+7) {
   background-color: #00FF00;
+  grid-area: b;
 }
 
 .grid > div:nth-child(n+8):nth-child(-n+9) {
   background-color: #0000FF;
+  grid-area: c;
 }
 
 .grid > div:nth-child(10) {
   background-color: #FF0000;
+  grid-area: d;
+} */
+
+.gridItem1 {
+  grid-area: a;
 }
 
+.gridItem2 {
+  grid-area: b;
+}
+
+.gridItem3 {
+  grid-area: c;
+}
+
+.gridItem4 {
+  grid-area: d;
+}
+
+.gridItem5 {
+  grid-area: e;
+}
+
+.gridItem6 {
+  grid-area: f;
+}
+
+.gridItem7 {
+  grid-area: g;
+}
+
+.gridItem8 {
+  grid-area: w;
+}
+
+.gridItem9 {
+  grid-area: q;
+}
+
+.gridItem10 {
+  grid-area: z;
+}
